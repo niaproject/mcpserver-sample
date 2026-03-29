@@ -144,4 +144,4 @@ def search_text(keyword: str, relative_dir: str = "") -> list[dict]:
 if __name__ == "__main__":
     # stdout には余計な print を出さないこと
     print("Starting local-file-reader MCP server...", file=sys.stderr)
-    mcp.run()
+    mcp.run(transport='sse')
